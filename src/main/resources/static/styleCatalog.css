@@ -1,0 +1,252 @@
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background: url("img/background.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;	
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+
+
+.header
+{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.headerMenu
+{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a
+{
+    color: #FF7C00;
+    text-decoration: none;
+}
+
+.navigation
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.CommonObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: #FF7C00;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.CommonObj:hover
+{
+    color: #A65100	;
+}
+
+
+/* Mid */
+
+.mainBlock
+{
+    height: 2000px;
+}
+
+.mainContainer
+{
+    padding-top: 10%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardsContainer
+{
+    display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+}
+
+.textArea
+{
+    padding-top: 10%;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.card
+{
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card h2
+{
+    color: black;
+}
+
+.card p
+{
+    color: black;
+}
+
+
+.btn
+{
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn.add
+{
+    background-color: green;
+}
+
+.btn.del
+{
+    background-color: red;
+}
+
+/* Footer */
+.footer
+{
+    background: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p
+{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    .header
+    {
+        height: 3em;
+    }
+
+    .logo
+    {
+        font-size: 15px;
+    }
+
+    .navigation
+    {
+        font-size: 10px;
+    }
+
+    .container
+    {
+        max-width: 290px;
+    }
+
+    .mainContainer
+    {
+        max-width: 290px;
+        padding-top: 40%;
+        padding-right: 10%;
+    }
+
+    .footer
+    {
+        height: 40px;
+    }
+
+    .footer p
+    {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .header
+    {
+        height: 4em;
+    }
+
+    .logo
+    {
+        font-size: 22px;
+    }
+
+    .navigation
+    {
+        font-size: 14px;
+    }
+
+    .container
+    {
+        max-width: 450px;
+    }
+
+    .mainContainer
+    {
+        max-width: 450px;
+        padding-top: 30%;
+        padding-right: 10%;
+    }
+
+
+    .footer
+    {
+        height: 40px;
+    }
+
+    .footer p
+    {
+        font-size: 9px;
+    }
+}
+

@@ -1,0 +1,183 @@
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background: url("img/background.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;	
+}
+
+*,
+*::after
+*::before {
+   box-sizing: border-box;
+}
+
+
+
+.header
+{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.headerMenu
+{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo a 
+{
+    color: #FF7C00;
+    text-decoration: none;
+}
+
+
+.navigation
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.CommonObj
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: #FF7C00;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.CommonObj:hover
+{
+    color: #A65100	;
+}
+
+/* Mid */
+
+.mainBlock
+{
+    margin-top: 5%;
+    height: 100vh;
+}
+
+.mainContainer
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20%;
+}
+
+table {
+    border-collapse: separate;
+    width: 80%;
+    border-spacing: 7px 11px;
+}
+
+.cartBlock tr
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartBlock th
+{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.cartBlock p
+{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: orange;
+}
+
+.cartBlock p span
+{
+    color: white;
+}
+
+.cartBlock td
+{
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.cartBlock label
+{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: orange;
+}
+
+.cartBlock button
+{
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #FF7C00;
+}
+
+
+/* Footer */
+.footer
+{
+    background: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p
+{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
